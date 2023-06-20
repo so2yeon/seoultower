@@ -1,0 +1,327 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+*{box-sizing: border-box;}
+body{
+  background-color: #fff;
+  color:#222;
+  overflow: auto;
+}
+html{overflow-y: hidden;}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.gallery1 { /* 갤러리 전체영역 설정 */
+	overflow:hidden; 
+	position:relative; 
+	width:100%;
+  margin-top: 70px;
+} 
+main img{  /*가변이미지*/
+	width:100%; 
+	max-width:100%;
+}
+
+.gallery1_text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 4px rgb(0,0,0,0.8);
+  z-index: 100;
+}
+.gallery1_text h1{
+  position: relative;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+.gallery1_text h1::after{
+  position: absolute;
+  content:'';
+  border-left: 8px solid #fff;
+  border-bottom: 3px solid #fff;
+  height: 20px;
+  left: 8%;
+  bottom: 0;
+  box-shadow: -1px 0 4px rgb(0,0,0,0.5);
+}
+.gallery1_text h1::before{
+  position: absolute;
+  content:'';
+  border-bottom: 3px solid #fff;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  box-shadow: 0 1px 4px rgb(0,0,0,0.5);
+}
+.gallery1_text h3{
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.gallery1_text p{
+  margin-top: 17px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+section{background-color: #F2F2F2;}
+.contents1{
+  width: 100%;
+  min-width: 100%;
+  height: 230px;
+  background-color: #F8C477;
+  position: relative;
+}
+.content1{
+  position: absolute;
+  padding:20px;
+  border-radius: 80px;
+  background-color: #fff;
+  text-align: center;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content1 h2{
+  padding: 5px;
+  color:#FF6B00;
+  font-size: 23px;
+  font-size: 1.4375rem;
+}
+.con1_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 5px;
+}
+.con1_text>span{
+  display: inline-block;
+  font-size: 80px;
+  font-size: 5rem;
+  padding-right: 40px;
+  color:#FF6B00;
+}
+.con1_text p{
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.con1_text p .icon1{
+  transform: translateY(-3px);
+  padding-left: 1px;
+}
+.contents2{
+  background-color: #97AFC6;
+  width: 100%;
+  min-width: 100%;
+  height: 330px;
+  color: #fff;
+  text-align: center;
+}
+.contents2 h2{
+  padding-top: 20px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.contents2 b{
+  background-color: #4B88D0;
+  border-radius: 20px;
+  padding: 2px 7px;
+  margin-right: 3px;
+}
+.contents2 span{
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+.contents3,.contents4{
+  width: 100%;
+}
+.content3,.content4{
+  border: 1px solid #D6D6D6;
+  background-color: #fff;
+  border-radius: 60px;
+  padding:20px;
+  width: 90%;
+  height: 420px;
+  margin: 50px auto ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content3 h2 ,.content4 h2,.content5 h2{
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.grid1 p,.grid2 p{
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
+.grid1{
+  display:grid;
+  width: 100%;
+  min-width: 100%;
+  height: 300px;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: minmax(150px,auto);
+  grid-gap: 5px;
+}
+.img{
+  padding: 15px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150px;
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+.img1{
+  background:url(../image/볼거리.jpg)no-repeat bottom center;
+  background-size: cover;
+  grid-column: 1/3
+}
+.img2{
+  background:url(../image/먹거리.jpg)no-repeat bottom center;
+  background-size: cover;
+  grid-row:2/3
+}
+
+.img3{
+  background:url(../image/즐길거리.jpg)no-repeat center center;
+  background-size: cover;
+  grid-row: 2/3
+}
+.grid2{
+  display:grid;
+  width: 100%;
+  min-width: 100%;
+  height: 300px;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: minmax(150px,auto);
+  grid-gap: 5px;
+}
+.img4{
+  background:url(../image/패밀리코스.jpg)no-repeat center center;
+  background-size: cover;
+  grid-row: 1/2
+}
+.img5{
+  background:url(../image/커플코스.jpg)no-repeat bottom center;
+  background-size: cover;
+  grid-row:1/2
+}
+
+.img6{
+  background:url(../image/힐링코스.jpg)no-repeat center -180px;
+  background-size: cover;
+  grid-column: 1/3
+}
+.img:hover{filter: opacity(1);}
+.contents5{
+  background: url(../image/포토존배경.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-width:100%;
+  height: 350px;
+  position: relative;
+}
+.filter{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 30px;
+  width: 93%;
+  height: 320px;
+  filter: blur(2px);
+}
+.content5{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.ar{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ar_1,.ar_2{
+  width: 100%;
+  min-width: 100%;
+}
+.ar span{
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  width: 28%;
+  height: 100px;
+  border-radius: 50%;
+  overflow:hidden;
+}
+.ar img{
+  width: 100%;
+  min-width: 100%;
+  height:100%;
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+.ar b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.7);
+}
+.ar span:hover img{filter: opacity(1);}
+.gallery2{
+  width: 100%;
+  text-align: center;
+  margin:0 auto;
+  overflow:hidden;
+}
+.gallery2 img{
+  width: 100%;
+  min-width: 100%;
+}
+.gallery2 h2{
+  margin: 40px 0 20px 0;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.gallery2 .nav2{
+	background-color: #fff;
+} 

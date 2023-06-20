@@ -1,0 +1,124 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+*{box-sizing: border-box;}
+body{
+  color:#222;
+  overflow: auto;
+}
+html{overflow-y: hidden;}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.gallery1 { 
+	overflow:hidden; 
+	position:relative; 
+	width:100%;
+  height: 100%;
+} 
+main img{ 
+	width:100%; 
+	max-width:100%;
+  height: 360px;
+}
+.gallery1_text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 4px rgb(0,0,0,0.8);
+  line-height: 30px;
+}
+.gallery1_text h1{
+  position: relative;
+  font-size: 35px;
+}
+.gallery1_text h3{
+  font-size: 17px;
+  font-weight: 500;
+}
+.gallery1_text p{
+  font-size: 17px;
+  font-weight: 500;
+}
+.main_img img{
+  transform: translateY(50px);
+}
+.contents5{
+  background-color: #fff;
+  width: 100%;
+  min-width:100%;
+  height: 350px;
+  position: relative;
+}
+.content5{
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.content5 h2{
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: #3371F0;
+}
+.ar{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ar_1,.ar_2{
+  width: 100%;
+  min-width: 100%;
+}
+.ar span{
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  width: 28%;
+  height: 100px;
+  border-radius: 50%;
+  overflow:hidden;
+}
+.ar img{
+  width: 100%;
+  min-width: 100%;
+  height:100%;
+  filter: opacity(1);
+  transition: 0.3s;
+}
+.ar b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.7);
+}
+.ar span:hover img{filter: opacity(0.7);}

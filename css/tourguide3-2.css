@@ -1,0 +1,98 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+*{box-sizing: border-box;}
+body{
+  color:#222;
+  overflow: auto;
+}
+html{overflow-y: hidden;}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+section{
+  height: 750px;
+}
+.gallery1 { 
+	overflow:hidden; 
+	position:relative; 
+	width:100%;
+  height: 100%;
+} 
+main img{ 
+	width:100%; 
+	max-width:100%;
+  height: 300px;
+}
+.gallery1_text{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 4px rgb(0,0,0,0.8);
+  line-height: 30px;
+}
+.gallery1_text h2{
+  position: relative;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.gallery1_text p{
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.main_img img{
+  transform: translatey(50px);
+}
+.content1{
+  width: 90%;
+  margin: auto;
+}
+.content1 h3{
+  text-align: center;
+  margin: 50px 0 20px 0;
+  color:#3371F0;;
+}
+.con1_img{
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  height: 250px;
+}
+.con1_img img{
+  width: 100%;
+  min-width: 100%;
+  height: 250px;
+}
+.content1 p{
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+.swiper-container {
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+}
+.swiper-slide img{
+  display: inline-block;
+  width: 170px;
+  height: 150px;
+  margin-top: 70px;
+}
+
